@@ -5,4 +5,45 @@
 
 body {
     background-color: rgb(103, 103, 227);
+    display: flex; /* to bring items center horizontally */
+    justify-content: center; 
+    height: 100vh;
+    align-items: center; /* to bring items center vertically */
+    font-family: cursive;
+}
+
+.calendar-container {
+    background-color: white;
+    width: 300px;
+    text-align: center; /* to bring the inline items to the center */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* this removes the overlapping of child items since month-name was overlapping */
+}
+
+.month-name {
+    margin: 0;
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.day-name {
+    font-size: 20px;
+    color: darkgray;
+}
+
+.day-number {
+    font-size: 80px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.year {
+    margin: 20px 0;
+    font-size: 20px;
+    color: darkgray;
+    font-weight: 500;
 }
